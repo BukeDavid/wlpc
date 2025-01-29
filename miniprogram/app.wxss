@@ -1,0 +1,31 @@
+page {
+  --primary-color: #07c160;
+  --background-color: #f7f7f7;
+  --text-color: #333333;
+  
+  background-color: var(--background-color);
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.container {
+  min-height: 100vh;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 8rpx;
+  padding: 20rpx 40rpx;
+  border: none;
+  font-size: 28rpx;
+}
+
+.input-item {
+  background: #ffffff;
+  padding: 24rpx;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+} 

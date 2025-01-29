@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="login-header">
+    <text class="title">IT设备故障上报平台</text>
+    <text class="subtitle">{{isLogin ? '欢迎回来' : '创建新账号'}}</text>
+  </view>
+  
+  <view class="form">
+    <view class="input-group">
+      <input class="input-item" 
+        type="number" 
+        placeholder="请输入手机号码" 
+        bindinput="handlePhoneInput"
+        maxlength="11"
+        value="{{phone}}" />
+        
+      <input class="input-item" 
+        type="text" 
+        placeholder="请输入6位客服代码（数字和字母组合）" 
+        bindinput="handleServiceCodeInput"
+        maxlength="6"
+        value="{{serviceCode}}" />
+    </view>
+
+    <button class="submit-btn {{canSubmit ? '' : 'disabled'}}" 
+      bindtap="handleSubmit" 
+      disabled="{{!canSubmit}}">
+      {{isLogin ? '登录' : '注册'}}
+    </button>
+
+    <view class="toggle-mode" bindtap="toggleMode">
+      {{isLogin ? '还没有账号？立即注册' : '已有账号？立即登录'}}
+    </view>
+  </view>
+  
+  <view class="copyright">
+    <text>威力电脑（2025）版权所有</text>
+  </view>
+</view> 

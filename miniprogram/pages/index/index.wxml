@@ -1,0 +1,36 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">IT设备故障上报平台</text>
+    <text class="welcome" wx:if="{{userInfo}}">欢迎，{{userInfo.nickname}}</text>
+  </view>
+
+  <view class="quick-actions">
+    <navigator url="/pages/report/create" class="action-item">
+      <image class="action-icon" src="/assets/images/report.svg" mode="aspectFit"></image>
+      <text>故障上报</text>
+    </navigator>
+    <navigator url="/pages/report/list" class="action-item">
+      <image class="action-icon" src="/assets/images/history.svg" mode="aspectFit"></image>
+      <text>历史记录</text>
+    </navigator>
+  </view>
+
+  <view class="notice-board">
+    <view class="notice-title">公告栏</view>
+    <view class="notice-content">
+      <text>{{notice || '暂无公告'}}</text>
+    </view>
+  </view>
+
+  <view class="service-info">
+    <view class="info-title">服务时间</view>
+    <view class="info-content">
+      <text>工作日：9:00-18:00</text>
+      <text>节假日：10:00-16:00</text>
+    </view>
+    <view class="contact">
+      <text>服务热线：400-xxx-xxxx</text>
+    </view>
+  </view>
+</view>

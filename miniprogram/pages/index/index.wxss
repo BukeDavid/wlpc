@@ -1,0 +1,95 @@
+.container {
+  padding: 30rpx;
+}
+
+.header {
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.welcome {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.quick-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  width: 280rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.action-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.notice-board {
+  background: #ffffff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+  margin-bottom: 40rpx;
+}
+
+.notice-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  color: var(--text-color);
+}
+
+.notice-content {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.service-info {
+  background: #ffffff;
+  padding: 30rpx;
+  border-radius: 12rpx;
+}
+
+.info-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  color: var(--text-color);
+}
+
+.info-content {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.info-content text {
+  display: block;
+  line-height: 1.6;
+}
+
+.contact {
+  font-size: 28rpx;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 20rpx;
+} 

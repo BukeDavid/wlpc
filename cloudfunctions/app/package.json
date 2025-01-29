@@ -1,0 +1,14 @@
+{
+    "name": "wlpc-backend",
+    "version": "1.0.0",
+    "description": "威力电脑IT设备故障上报平台后端服务",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mysql2": "^3.6.5",
+      "jsonwebtoken": "^9.0.2"
+    }
+  }
